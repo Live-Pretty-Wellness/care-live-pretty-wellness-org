@@ -44,12 +44,24 @@ function isH3SwallowedErrorBody(body: string): boolean {
   }
 }
 
+// Care pages must never be indexed. Belt-and-braces alongside the per-route
+// <meta name="robots"> tags: an HTTP header crawlers honour without parsing HTML.
+function withNoIndexHeader(response: Response): Response {
+  const headers = new Headers(response.headers);
+  headers.set("X-Robots-Tag", "noindex, nofollow");
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
-      return await normalizeCatastrophicSsrResponse(response);
+      return withNoIndexHeader(await normalizeCatastrophicSsrResponse(response));
     } catch (error) {
       console.error(error);
       return new Response(renderErrorPage(), {

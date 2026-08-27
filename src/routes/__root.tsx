@@ -80,6 +80,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Jean's Picks: short, save-worthy skincare education from Live Pretty Wellness. Make it make sense.",
       },
       { name: "author", content: "Live Pretty Wellness" },
+      // Care pages are intentionally never indexed. Sitewide default so any
+      // route (including 404s) is server-rendered with noindex.
+      { name: "robots", content: "noindex, nofollow" },
+      { name: "googlebot", content: "noindex, nofollow" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
