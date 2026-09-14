@@ -769,7 +769,7 @@ function PrettySkinReset() {
               For acne-prone skin that needs a long-term strategy.
             </p>
             <a
-              href="#"
+              href="https://liveprettywellness.com/pretty-skin-strategist"
               className="mt-5 inline-block rounded-sm border border-cocoa px-6 py-3 text-center text-[0.75rem] font-semibold tracking-[0.18em] text-cocoa uppercase transition-colors hover:bg-cocoa hover:text-offwhite focus-visible:outline-2 focus-visible:outline-ring"
             >
               Get My Guide
@@ -785,7 +785,7 @@ function PrettySkinReset() {
             </p>
             <p className="mt-2 font-display text-lg font-semibold text-cocoa">Long-Term Clear Skin Game Plan</p>
             <a
-              href="#"
+              href="https://liveprettywellness.com/acne-skin-help"
               className="mt-5 inline-block rounded-sm bg-cocoa px-6 py-3 text-center text-[0.75rem] font-semibold tracking-[0.18em] text-offwhite uppercase transition-colors hover:bg-espresso focus-visible:outline-2 focus-visible:outline-ring"
             >
               Work With Jean 1:1
