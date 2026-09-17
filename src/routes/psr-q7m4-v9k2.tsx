@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
 import lpwLogo from "@/assets/lpw-logo.png";
+import clearSkinPyramid from "@/assets/live-pretty-clear-skin-pyramid.png.asset.json";
 import {
   CHECKLIST,
   EMPTY_RESET_STATE,
@@ -110,24 +111,23 @@ function ProgressBar() {
 
 function ResetPyramid() {
   const levels = [
-    { n: "4 — STABILIZE", d: "Move toward skin that feels healthier, softer, supple and comfortable.", w: "w-[54%]", dark: true },
-    { n: "3 — SUPPORT", d: "Create a gentler environment for acne-prone skin.", w: "w-[70%]", dark: false },
-    { n: "2 — ORGANIZE", d: "See what you're already using.", w: "w-[86%]", dark: false },
-    { n: "1 — CLEAR", d: "Remove unnecessary noise.", w: "w-full", dark: false },
+    { n: "4 — STABILIZE", d: "Move toward skin that feels healthier, softer, supple and comfortable.", tone: "bg-cocoa text-offwhite", size: "basis-[38%] pt-10", copy: "w-[30%]" },
+    { n: "3 — SUPPORT", d: "Create a gentler environment for acne-prone skin.", tone: "bg-rose-tint text-ink", size: "basis-[22%]", copy: "w-[42%]" },
+    { n: "2 — ORGANIZE", d: "See what you're already using.", tone: "bg-sand text-ink", size: "basis-[20%]", copy: "w-[58%]" },
+    { n: "1 — CLEAR", d: "Remove unnecessary noise.", tone: "bg-cream text-ink", size: "basis-[20%]", copy: "w-[78%]" },
   ];
   return (
     <div className="mx-auto max-w-lg" role="img" aria-label="The Pretty Skin Reset mini-framework: Clear, Organize, Support, Stabilize">
-      <div className="flex flex-col items-stretch gap-1">
+      <div className="flex aspect-[1.08/1] w-full flex-col overflow-hidden border border-cocoa bg-cream [clip-path:polygon(50%_0,100%_100%,0_100%)]">
         {levels.map((lvl) => (
           <div
             key={lvl.n}
-            className={`mx-auto border px-4 py-3 text-center ${lvl.w} ${
-              lvl.dark ? "border-cocoa bg-cocoa text-offwhite" : "border-sand bg-cream text-ink"
-            }`}
-            style={{ clipPath: "polygon(4% 0, 96% 0, 100% 100%, 0 100%)" }}
+            className={`flex min-h-0 shrink-0 flex-col items-center justify-center border-b border-cocoa/60 text-center last:border-b-0 ${lvl.tone} ${lvl.size}`}
           >
-            <p className={`text-[0.68rem] font-semibold tracking-[0.18em] ${lvl.dark ? "text-offwhite" : "text-cocoa"}`}>{lvl.n}</p>
-            <p className={`mt-1 text-[0.76rem] leading-snug ${lvl.dark ? "text-offwhite/85" : "text-ink-soft"}`}>{lvl.d}</p>
+            <div className={lvl.copy}>
+              <p className="text-[0.54rem] font-semibold tracking-[0.08em] sm:text-[0.68rem] sm:tracking-[0.14em]">{lvl.n}</p>
+              <p className="mt-1 text-[0.54rem] leading-tight sm:text-[0.72rem] sm:leading-snug">{lvl.d}</p>
+            </div>
           </div>
         ))}
       </div>
@@ -139,33 +139,19 @@ function ResetPyramid() {
 }
 
 function ClearSkinPyramid() {
-  const levels = [
-    { n: "4 — MAINTAIN + ENHANCE", d: "Long-term control and radiance", w: "w-[54%]", here: false },
-    { n: "3 — CONTROL BREAKOUTS", d: "Address bacterial and fungal triggers", w: "w-[70%]", here: false },
-    { n: "2 — CALM INFLAMMATION", d: "Reduce irritation and reactivity", w: "w-[86%]", here: false },
-    { n: "1 — STABILIZE SKIN", d: "Repair barrier and restore balance", w: "w-full", here: true },
-  ];
   return (
-    <div className="mx-auto max-w-lg" role="img" aria-label="The Live Pretty Wellness Clear-Skin Pyramid. You are here: Stabilize Skin.">
-      <p className="pb-2 text-center text-[0.72rem] font-semibold tracking-[0.2em] text-cocoa uppercase">→ Clear Skin</p>
-      <div className="flex flex-col items-stretch gap-1">
-        {levels.map((lvl) => (
-          <div
-            key={lvl.n}
-            className={`mx-auto border px-4 py-3 text-center ${lvl.w} ${
-              lvl.here ? "border-2 border-cocoa bg-cocoa text-offwhite" : "border-sand bg-offwhite text-ink"
-            }`}
-            style={{ clipPath: "polygon(4% 0, 96% 0, 100% 100%, 0 100%)" }}
-          >
-            <p className={`text-[0.68rem] font-semibold tracking-[0.18em] ${lvl.here ? "text-offwhite" : "text-cocoa"}`}>
-              {lvl.n}
-              {lvl.here && <span className="ml-2 rounded-sm bg-rose px-1.5 py-0.5 text-[0.6rem] tracking-[0.12em] text-offwhite">You are here</span>}
-            </p>
-            <p className={`mt-1 text-[0.76rem] leading-snug ${lvl.here ? "text-offwhite/85" : "text-ink-soft"}`}>{lvl.d}</p>
-          </div>
-        ))}
+    <figure className="mx-auto max-w-2xl">
+      <div className="ml-[7%] inline-flex flex-col items-center text-center text-[0.7rem] font-semibold tracking-[0.18em] text-cocoa uppercase sm:ml-[10%]">
+        <span>You are here</span>
+        <span className="mt-1 text-xl leading-none text-rose" aria-hidden="true">↓</span>
       </div>
-    </div>
+      <img
+        src={clearSkinPyramid.url}
+        alt="Jean's original Clear-Skin Pyramid, with Stabilize Skin as the foundation, followed by Calm Inflammation, Control Breakouts, and Maintain and Enhance toward Clear Skin"
+        className="mt-1 h-auto w-full object-contain"
+        loading="lazy"
+      />
+    </figure>
   );
 }
 
