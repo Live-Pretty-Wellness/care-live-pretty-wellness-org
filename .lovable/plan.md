@@ -11,7 +11,7 @@
 ## Organizer move
 - Add the unlisted `/sro-k8p3-x5n7` page and move the full Morning/Evening organizer there intact.
 - Preserve all fields, independent Treatment/Active day selectors, helper, oral medication documentation, PAUSE behavior, guardrails, and saved entries.
-- Keep the same saved-data key so existing organizer entries remain available after the move.
+- Preserve the existing organizer’s saved-data behavior and current user entries when moving it to the new route. Do not create a second data store or reset existing entries.
 - Replace the organizer on the Reset with the exact requested callout and same-tab link.
 
 ## Privacy and isolation
