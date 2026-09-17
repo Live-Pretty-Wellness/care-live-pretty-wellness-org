@@ -111,10 +111,10 @@ function ProgressBar() {
 
 function ResetPyramid() {
   const levels = [
-    { n: "4 — STABILIZE", d: "Move toward skin that feels healthier, softer, supple and comfortable.", tone: "bg-cocoa text-offwhite", depth: "px-[32%] pt-9 sm:pt-11" },
-    { n: "3 — SUPPORT", d: "Create a gentler environment for acne-prone skin.", tone: "bg-rose-tint text-ink", depth: "px-[23%]" },
-    { n: "2 — ORGANIZE", d: "See what you're already using.", tone: "bg-sand text-ink", depth: "px-[14%]" },
-    { n: "1 — CLEAR", d: "Remove unnecessary noise.", tone: "bg-cream text-ink", depth: "px-[6%]" },
+    { n: "4 — STABILIZE", d: "Move toward skin that feels healthier, softer, supple and comfortable.", tone: "bg-cocoa text-offwhite", size: "basis-[34%] pt-7", copy: "w-[38%]" },
+    { n: "3 — SUPPORT", d: "Create a gentler environment for acne-prone skin.", tone: "bg-rose-tint text-ink", size: "basis-[22%]", copy: "w-[56%]" },
+    { n: "2 — ORGANIZE", d: "See what you're already using.", tone: "bg-sand text-ink", size: "basis-[22%]", copy: "w-[72%]" },
+    { n: "1 — CLEAR", d: "Remove unnecessary noise.", tone: "bg-cream text-ink", size: "basis-[22%]", copy: "w-[88%]" },
   ];
   return (
     <div className="mx-auto max-w-lg" role="img" aria-label="The Pretty Skin Reset mini-framework: Clear, Organize, Support, Stabilize">
@@ -122,10 +122,12 @@ function ResetPyramid() {
         {levels.map((lvl) => (
           <div
             key={lvl.n}
-            className={`flex min-h-0 flex-1 flex-col items-center justify-center border-b border-cocoa/60 text-center last:border-b-0 ${lvl.tone} ${lvl.depth}`}
+            className={`flex min-h-0 shrink-0 flex-col items-center justify-center border-b border-cocoa/60 text-center last:border-b-0 ${lvl.tone} ${lvl.size}`}
           >
-            <p className="text-[0.58rem] font-semibold tracking-[0.12em] sm:text-[0.7rem] sm:tracking-[0.16em]">{lvl.n}</p>
-            <p className="mt-1 text-[0.59rem] leading-tight sm:text-[0.76rem] sm:leading-snug">{lvl.d}</p>
+            <div className={lvl.copy}>
+              <p className="text-[0.54rem] font-semibold tracking-[0.08em] sm:text-[0.68rem] sm:tracking-[0.14em]">{lvl.n}</p>
+              <p className="mt-1 text-[0.54rem] leading-tight sm:text-[0.72rem] sm:leading-snug">{lvl.d}</p>
+            </div>
           </div>
         ))}
       </div>
