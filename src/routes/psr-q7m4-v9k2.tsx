@@ -111,10 +111,10 @@ function ProgressBar() {
 
 function ResetPyramid() {
   const levels = [
-    { n: "4 — STABILIZE", d: "Move toward skin that feels healthier, softer, supple and comfortable.", tone: "bg-cocoa text-offwhite", size: "basis-[34%] pt-7", copy: "w-[38%]" },
-    { n: "3 — SUPPORT", d: "Create a gentler environment for acne-prone skin.", tone: "bg-rose-tint text-ink", size: "basis-[22%]", copy: "w-[56%]" },
-    { n: "2 — ORGANIZE", d: "See what you're already using.", tone: "bg-sand text-ink", size: "basis-[22%]", copy: "w-[72%]" },
-    { n: "1 — CLEAR", d: "Remove unnecessary noise.", tone: "bg-cream text-ink", size: "basis-[22%]", copy: "w-[88%]" },
+    { n: "4 — STABILIZE", d: "Move toward skin that feels healthier, softer, supple and comfortable.", tone: "bg-cocoa text-offwhite", size: "basis-[38%] pt-10", copy: "w-[30%]" },
+    { n: "3 — SUPPORT", d: "Create a gentler environment for acne-prone skin.", tone: "bg-rose-tint text-ink", size: "basis-[22%]", copy: "w-[42%]" },
+    { n: "2 — ORGANIZE", d: "See what you're already using.", tone: "bg-sand text-ink", size: "basis-[20%]", copy: "w-[58%]" },
+    { n: "1 — CLEAR", d: "Remove unnecessary noise.", tone: "bg-cream text-ink", size: "basis-[20%]", copy: "w-[78%]" },
   ];
   return (
     <div className="mx-auto max-w-lg" role="img" aria-label="The Pretty Skin Reset mini-framework: Clear, Organize, Support, Stabilize">
