@@ -14,6 +14,7 @@ import { Route as Bpsa4k7m2q9xRouteImport } from './routes/bpsa-4k7m2q9x'
 import { Route as Dspot5c9j4w7tRouteImport } from './routes/dspot-5c9j4w7t'
 import { Route as Hairbo2z6d8f3yRouteImport } from './routes/hairbo-2z6d8f3y'
 import { Route as PsrQ7m4V9k2RouteImport } from './routes/psr-q7m4-v9k2'
+import { Route as SroK8p3X5n7RouteImport } from './routes/sro-k8p3-x5n7'
 import { Route as Trtaza8v3n6r1pRouteImport } from './routes/trtaza-8v3n6r1p'
 
 const Acneplan6h3v9k2sRoute = Acneplan6h3v9k2sRouteImport.update({
@@ -41,6 +42,11 @@ const PsrQ7m4V9k2Route = PsrQ7m4V9k2RouteImport.update({
   path: '/psr-q7m4-v9k2',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SroK8p3X5n7Route = SroK8p3X5n7RouteImport.update({
+  id: '/sro-k8p3-x5n7',
+  path: '/sro-k8p3-x5n7',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const Trtaza8v3n6r1pRoute = Trtaza8v3n6r1pRouteImport.update({
   id: '/trtaza-8v3n6r1p',
   path: '/trtaza-8v3n6r1p',
@@ -53,6 +59,7 @@ export interface FileRoutesByFullPath {
   '/dspot-5c9j4w7t': typeof Dspot5c9j4w7tRoute
   '/hairbo-2z6d8f3y': typeof Hairbo2z6d8f3yRoute
   '/psr-q7m4-v9k2': typeof PsrQ7m4V9k2Route
+  '/sro-k8p3-x5n7': typeof SroK8p3X5n7Route
   '/trtaza-8v3n6r1p': typeof Trtaza8v3n6r1pRoute
 }
 export interface FileRoutesByTo {
@@ -61,6 +68,7 @@ export interface FileRoutesByTo {
   '/dspot-5c9j4w7t': typeof Dspot5c9j4w7tRoute
   '/hairbo-2z6d8f3y': typeof Hairbo2z6d8f3yRoute
   '/psr-q7m4-v9k2': typeof PsrQ7m4V9k2Route
+  '/sro-k8p3-x5n7': typeof SroK8p3X5n7Route
   '/trtaza-8v3n6r1p': typeof Trtaza8v3n6r1pRoute
 }
 export interface FileRoutesById {
@@ -70,6 +78,7 @@ export interface FileRoutesById {
   '/dspot-5c9j4w7t': typeof Dspot5c9j4w7tRoute
   '/hairbo-2z6d8f3y': typeof Hairbo2z6d8f3yRoute
   '/psr-q7m4-v9k2': typeof PsrQ7m4V9k2Route
+  '/sro-k8p3-x5n7': typeof SroK8p3X5n7Route
   '/trtaza-8v3n6r1p': typeof Trtaza8v3n6r1pRoute
 }
 export interface FileRouteTypes {
@@ -80,6 +89,7 @@ export interface FileRouteTypes {
     | '/dspot-5c9j4w7t'
     | '/hairbo-2z6d8f3y'
     | '/psr-q7m4-v9k2'
+    | '/sro-k8p3-x5n7'
     | '/trtaza-8v3n6r1p'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -88,6 +98,7 @@ export interface FileRouteTypes {
     | '/dspot-5c9j4w7t'
     | '/hairbo-2z6d8f3y'
     | '/psr-q7m4-v9k2'
+    | '/sro-k8p3-x5n7'
     | '/trtaza-8v3n6r1p'
   id:
     | '__root__'
@@ -96,6 +107,7 @@ export interface FileRouteTypes {
     | '/dspot-5c9j4w7t'
     | '/hairbo-2z6d8f3y'
     | '/psr-q7m4-v9k2'
+    | '/sro-k8p3-x5n7'
     | '/trtaza-8v3n6r1p'
   fileRoutesById: FileRoutesById
 }
@@ -105,6 +117,7 @@ export interface RootRouteChildren {
   Dspot5c9j4w7tRoute: typeof Dspot5c9j4w7tRoute
   Hairbo2z6d8f3yRoute: typeof Hairbo2z6d8f3yRoute
   PsrQ7m4V9k2Route: typeof PsrQ7m4V9k2Route
+  SroK8p3X5n7Route: typeof SroK8p3X5n7Route
   Trtaza8v3n6r1pRoute: typeof Trtaza8v3n6r1pRoute
 }
 
@@ -145,6 +158,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PsrQ7m4V9k2RouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sro-k8p3-x5n7': {
+      id: '/sro-k8p3-x5n7'
+      path: '/sro-k8p3-x5n7'
+      fullPath: '/sro-k8p3-x5n7'
+      preLoaderRoute: typeof SroK8p3X5n7RouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/trtaza-8v3n6r1p': {
       id: '/trtaza-8v3n6r1p'
       path: '/trtaza-8v3n6r1p'
@@ -161,6 +181,7 @@ const rootRouteChildren: RootRouteChildren = {
   Dspot5c9j4w7tRoute: Dspot5c9j4w7tRoute,
   Hairbo2z6d8f3yRoute: Hairbo2z6d8f3yRoute,
   PsrQ7m4V9k2Route: PsrQ7m4V9k2Route,
+  SroK8p3X5n7Route: SroK8p3X5n7Route,
   Trtaza8v3n6r1pRoute: Trtaza8v3n6r1pRoute,
 }
 export const routeTree = rootRouteImport
