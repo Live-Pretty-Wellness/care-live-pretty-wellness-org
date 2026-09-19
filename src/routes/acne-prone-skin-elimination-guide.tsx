@@ -406,9 +406,8 @@ function EliminationGuidePage() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-ivory text-ink">
       <header className="border-b border-line bg-cream/80">
-        <div className="pick-shell flex items-center justify-between py-4">
+        <div className="pick-shell py-4">
           <img src={lpwLogo} alt="Live Pretty Wellness" className="h-12 w-auto sm:h-14" />
-          <p className="eyebrow text-right">Free skin guide</p>
         </div>
       </header>
 
@@ -510,7 +509,7 @@ function EliminationGuidePage() {
       <section className="pick-shell py-10 sm:py-12" aria-labelledby="client-experiences-title">
         <Label>Real client experiences</Label>
         <h2 id="client-experiences-title" className="mt-3 text-[1.75rem] sm:text-[2.15rem]">See Their Progress.</h2>
-        <p className="mt-4 max-w-2xl text-[1rem] leading-relaxed text-ink-soft">These are real Live Pretty Wellness clients and real skin journeys. Results are individual, and every person’s skin responds differently.</p>
+        <p className="mt-4 max-w-2xl text-[1rem] leading-relaxed text-ink-soft">These are real Live Pretty Wellness clients and real skin journeys.</p>
         <figure className="mt-7">
           <img
             src={clientCollage.url}
@@ -524,7 +523,6 @@ function EliminationGuidePage() {
           <ActionLink href={CLIENT_TRANSFORMATIONS_URL}>See more client progress + transformations →</ActionLink>
           <ActionLink href={CLIENT_REVIEWS_URL} outlined>Read client reviews + testimonials →</ActionLink>
         </div>
-        <p className="mt-6 text-[0.75rem] leading-relaxed text-taupe">Individual results vary. Client images reflect individual experiences and are not a guarantee of results.</p>
       </section>
 
       <section className="pick-shell py-12 sm:py-16" aria-labelledby="keep-going-title">
