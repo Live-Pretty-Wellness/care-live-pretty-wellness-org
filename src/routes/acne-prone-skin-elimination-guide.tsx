@@ -549,17 +549,14 @@ function EliminationGuidePage() {
           </div>
         </div>
 
-        <section aria-labelledby="medical-disclaimer" className="mt-10 max-w-2xl border-t border-line pt-6 text-center">
+        <section aria-labelledby="medical-disclaimer" className="mt-6 max-w-2xl border-t border-line pt-5 text-center">
           <h3 id="medical-disclaimer" className="text-[0.7rem] font-medium uppercase tracking-[0.2em] text-taupe">Medical Disclaimer</h3>
-          <div className="mt-3 space-y-3 text-[0.85rem] leading-relaxed text-ink-soft">
+          <div className="mt-3 space-y-2.5 text-[0.9rem] leading-relaxed text-ink-soft">
             <p>
-              This guide provides general educational and health information and does not constitute individualized medical advice, diagnosis, or treatment.
+              This guide provides general health information and does not replace individualized medical advice, diagnosis, or treatment. Although I&rsquo;m a Board-Certified Family Nurse Practitioner Strategist, I&rsquo;m not your healthcare provider unless we&rsquo;ve established a provider-patient relationship. For questions about your individual care or treatment, please contact your healthcare provider.
             </p>
             <p>
-              Although I am a Board-Certified Family Nurse Practitioner Strategist, I am not your healthcare provider unless we have established a healthcare provider–patient relationship. Please continue to follow the recommendations of the healthcare provider managing your care and contact them with questions about your medications, treatment, or individual medical needs.
-            </p>
-            <p>
-              Want me to be part of your care? I'd love to help. You can explore your options for working with me through Live Pretty Wellness.
+              Want me to be part of your care? I&rsquo;d love to help.
             </p>
           </div>
           <div className="mt-4 flex justify-center">
@@ -567,7 +564,7 @@ function EliminationGuidePage() {
           </div>
         </section>
 
-        <p className="mt-10 text-center text-[0.7rem] uppercase tracking-[0.18em] text-taupe">Live Pretty Wellness</p>
+        <p className="mt-8 text-center text-[0.7rem] uppercase tracking-[0.18em] text-taupe">Live Pretty Wellness</p>
       </section>
     </main>
   );
