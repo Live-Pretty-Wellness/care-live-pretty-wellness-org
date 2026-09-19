@@ -44,8 +44,8 @@ function isH3SwallowedErrorBody(body: string): boolean {
   }
 }
 
-// Care pages must never be indexed. Belt-and-braces alongside the per-route
-// <meta name="robots"> tags: an HTTP header crawlers honour without parsing HTML.
+// Existing Care pages remain non-indexed. The public elimination guide is the
+// only explicit page-level exception, matching its route metadata.
 function withPageIndexingHeader(request: Request, response: Response): Response {
   const headers = new Headers(response.headers);
   const path = new URL(request.url).pathname.replace(/\/$/, "") || "/";

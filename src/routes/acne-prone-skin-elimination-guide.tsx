@@ -325,7 +325,7 @@ function ThreeStepPath() {
               <p className="mt-2 text-[0.72rem] font-semibold uppercase tracking-[0.17em] text-cocoa">{title}</p>
               <p className="mt-2 text-[0.9rem] leading-snug text-ink-soft">{text}</p>
             </div>
-            {index < steps.length - 1 ? <div aria-hidden="true" className="grid h-8 place-items-center text-cocoa md:h-auto md:w-8">↓<span className="hidden md:inline">→</span></div> : null}
+            {index < steps.length - 1 ? <div aria-hidden="true" className="grid h-8 place-items-center text-cocoa md:h-auto md:w-8"><span className="md:hidden">↓</span><span className="hidden md:inline">→</span></div> : null}
           </div>
         ))}
       </div>
@@ -447,8 +447,7 @@ function EliminationGuidePage() {
       </section>
 
       <section className="pick-shell py-12 sm:py-16" aria-labelledby="after-title">
-        <Label>After your 3 days</Label>
-        <h2 id="after-title" className="mt-3 text-[2rem] sm:text-[2.65rem]">A Simpler Starting Point</h2>
+        <h2 id="after-title" className="text-[2rem] sm:text-[2.65rem]">After Your 3 Days</h2>
         <div className="mt-5 max-w-2xl space-y-4 text-[1rem] leading-relaxed text-ink-soft">
           <p>You may have noticed that this routine is very simple. That’s intentional.</p>
           <p>It isn’t a complete morning and evening skincare routine.</p>
