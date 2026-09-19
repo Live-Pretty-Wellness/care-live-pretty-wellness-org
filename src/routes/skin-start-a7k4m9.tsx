@@ -8,9 +8,9 @@ const STRATEGIST_URL = "https://liveprettywellness.com/pretty-skin-strategist";
 const CLIENT_TRANSFORMATIONS_URL = "https://stan.store/liveprettywellness/p/real-client-progress-transformations";
 const CLIENT_REVIEWS_URL = "https://stan.store/liveprettywellness/p/google-reviews-and-client-testimonials";
 const JEAN_PHOTO = "/images/jeans-picks/acneplan/jean-portrait-approved.jpeg";
-const PAGE_PATH = "/acne-prone-skin-elimination-guide";
+const PAGE_PATH = "/skin-start-a7k4m9";
 
-export const Route = createFileRoute("/acne-prone-skin-elimination-guide")({
+export const Route = createFileRoute("/skin-start-a7k4m9")({
   head: () => ({
     meta: [
       { title: "Acne-Prone Skin Elimination Guide | Live Pretty Wellness" },
