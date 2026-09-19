@@ -44,11 +44,16 @@ function isH3SwallowedErrorBody(body: string): boolean {
   }
 }
 
-// Care pages must never be indexed. Belt-and-braces alongside the per-route
-// <meta name="robots"> tags: an HTTP header crawlers honour without parsing HTML.
-function withNoIndexHeader(response: Response): Response {
+// Existing Care pages remain non-indexed. The public elimination guide is the
+// only explicit page-level exception, matching its route metadata.
+function withPageIndexingHeader(request: Request, response: Response): Response {
   const headers = new Headers(response.headers);
-  headers.set("X-Robots-Tag", "noindex, nofollow");
+  const path = new URL(request.url).pathname.replace(/\/$/, "") || "/";
+  if (path === "/acne-prone-skin-elimination-guide") {
+    headers.set("X-Robots-Tag", "index, follow");
+  } else {
+    headers.set("X-Robots-Tag", "noindex, nofollow");
+  }
   return new Response(response.body, {
     status: response.status,
     statusText: response.statusText,
@@ -61,7 +66,7 @@ export default {
     try {
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
-      return withNoIndexHeader(await normalizeCatastrophicSsrResponse(response));
+      return withPageIndexingHeader(request, await normalizeCatastrophicSsrResponse(response));
     } catch (error) {
       console.error(error);
       return new Response(renderErrorPage(), {
