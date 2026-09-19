@@ -257,11 +257,11 @@ function GuideAccordion({ items, value, onChange }: { items: AccordionItem[]; va
   );
 }
 
-function SectionHeading({ number, title, subtitle }: { number: string; title: string; subtitle: string }) {
+function SectionHeading({ id, number, title, subtitle }: { id: string; number: string; title: string; subtitle: string }) {
   return (
     <header>
       <Label>{number} — {title}</Label>
-      <h2 className="mt-3 text-[2rem] sm:text-[2.65rem]">{subtitle}</h2>
+      <h2 id={id} className="mt-3 text-[2rem] sm:text-[2.65rem]">{subtitle}</h2>
     </header>
   );
 }
@@ -400,7 +400,7 @@ function EliminationGuidePage() {
 
       <section className="border-t border-line bg-offwhite py-12 sm:py-16" aria-labelledby="eliminate-title">
         <div className="pick-shell">
-          <SectionHeading number="01" title="Eliminate" subtitle="What Needs to Go?" />
+          <SectionHeading id="eliminate-title" number="01" title="Eliminate" subtitle="What Needs to Go?" />
           <div className="mt-6 max-w-2xl space-y-4 text-[1rem] leading-relaxed text-ink-soft">
             <p>Grab the skincare, haircare, makeup, and other products that regularly touch your face.</p>
             <p>Turn them over. Read the labels. Use the lists below to screen what you’re using.</p>
@@ -415,8 +415,8 @@ function EliminationGuidePage() {
       </section>
 
       <section className="pick-shell py-12 sm:py-16" aria-labelledby="preserve-title">
-        <SectionHeading number="02" title="Preserve" subtitle="What Needs to Stay?" />
-        <h3 id="preserve-title" className="mt-8 text-2xl sm:text-3xl">Preserve Your Treatment.</h3>
+        <SectionHeading id="preserve-title" number="02" title="Preserve" subtitle="What Needs to Stay?" />
+        <h3 className="mt-8 text-2xl sm:text-3xl">Preserve Your Treatment.</h3>
         <div className="mt-4 max-w-2xl space-y-4 text-[1rem] leading-relaxed text-ink-soft">
           <p>This guide is for cleaning up the products, foods, and practices around your acne care—not for stopping treatment from your healthcare provider.</p>
           <p>If a healthcare provider has told you to use a medication or treatment, keep using it as directed.</p>
@@ -429,8 +429,8 @@ function EliminationGuidePage() {
 
       <section className="border-y border-line bg-cream py-12 sm:py-16" aria-labelledby="build-title">
         <div className="pick-shell">
-          <SectionHeading number="03" title="Build" subtitle="What Does My Routine Look Like Right Now?" />
-          <h3 id="build-title" className="mt-8 text-2xl sm:text-3xl">Build Your 3-Day Skin-Barrier-Support Routine</h3>
+          <SectionHeading id="build-title" number="03" title="Build" subtitle="What Does My Routine Look Like Right Now?" />
+          <h3 className="mt-8 text-2xl sm:text-3xl">Build Your 3-Day Skin-Barrier-Support Routine</h3>
           <p className="mt-4 max-w-2xl text-[1rem] leading-relaxed text-ink-soft">For the next 3 days, keep your skincare routine simple while you eliminate unnecessary products and support your skin.</p>
           <div className="mt-8">
             <GuideAccordion
