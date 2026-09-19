@@ -43,7 +43,7 @@ export const Route = createFileRoute("/acne-prone-skin-elimination-guide")({
             "@type": "Person",
             name: "Jean",
             honorificSuffix: "MSN, FNP-C",
-            jobTitle: "Board-Certified Family Nurse Practitioner",
+            jobTitle: "Board-Certified Family Nurse Practitioner Strategist",
             worksFor: { "@type": "Organization", name: "Live Pretty Wellness" },
           },
           publisher: { "@type": "Organization", name: "Live Pretty Wellness" },
@@ -367,7 +367,7 @@ function EliminationGuidePage() {
     {
       id: "food",
       title: "Check your food",
-      content: <div className="grid gap-6 sm:grid-cols-2">{FOOD_GROUPS.map((group) => <section key={group.title} className="border-t border-sand pt-4"><Label>{group.title}</Label><BulletList items={group.items} /></section>)}<p className="sm:col-span-2 border-l-2 border-rose pl-4 font-display text-lg text-ink">Whole fruit stays.</p></div>,
+      content: <div><div className="mb-6"><Label>What you eat matters, too.</Label><p className="mt-3 text-[0.98rem] leading-relaxed text-ink-soft">A balanced, nutrient-rich diet helps support overall skin health and the skin barrier. That’s part of what we’re supporting during these 3 days, too.</p></div><div className="grid gap-6 sm:grid-cols-2">{FOOD_GROUPS.map((group) => <section key={group.title} className="border-t border-sand pt-4"><Label>{group.title}</Label><BulletList items={group.items} /></section>)}<p className="sm:col-span-2 border-l-2 border-rose pl-4 font-display text-lg text-ink">Whole fruit stays.</p></div></div>,
     },
   ];
 
@@ -486,7 +486,7 @@ function EliminationGuidePage() {
           <div>
             <Label>Written and clinically reviewed by</Label>
             <h2 id="reviewed-by" className="mt-2 text-2xl">Jean, MSN, FNP-C</h2>
-            <p className="mt-1 text-[0.9rem] text-ink-soft">Board-Certified Family Nurse Practitioner · Nurse Practitioner Strategist</p>
+            <p className="mt-1 text-[0.9rem] text-ink-soft">Board-Certified Family Nurse Practitioner Strategist</p>
           </div>
         </div>
         <p className="mt-8 text-center text-[0.7rem] uppercase tracking-[0.18em] text-taupe">Live Pretty Wellness</p>
