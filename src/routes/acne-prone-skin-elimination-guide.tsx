@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
 import lpwLogo from "@/assets/lpw-logo.png";
+import clientCollage from "@/assets/client-progress-collage.png.asset.json";
 
 const CONSULTATION_URL = "https://liveprettywellness.com/acne-skin-help";
 const STRATEGIST_URL = "https://liveprettywellness.com/pretty-skin-strategist";
