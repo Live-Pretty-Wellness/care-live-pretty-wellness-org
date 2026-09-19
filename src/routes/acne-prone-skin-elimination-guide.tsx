@@ -43,7 +43,7 @@ export const Route = createFileRoute("/acne-prone-skin-elimination-guide")({
             "@type": "Person",
             name: "Jean",
             honorificSuffix: "MSN, FNP-C",
-            jobTitle: "Board-Certified Family Nurse Practitioner",
+            jobTitle: "Board-Certified Family Nurse Practitioner Strategist",
             worksFor: { "@type": "Organization", name: "Live Pretty Wellness" },
           },
           publisher: { "@type": "Organization", name: "Live Pretty Wellness" },
@@ -367,7 +367,7 @@ function EliminationGuidePage() {
     {
       id: "food",
       title: "Check your food",
-      content: <div className="grid gap-6 sm:grid-cols-2">{FOOD_GROUPS.map((group) => <section key={group.title} className="border-t border-sand pt-4"><Label>{group.title}</Label><BulletList items={group.items} /></section>)}<p className="sm:col-span-2 border-l-2 border-rose pl-4 font-display text-lg text-ink">Whole fruit stays.</p></div>,
+      content: <div><div className="mb-6"><Label>What you eat matters, too.</Label><p className="mt-3 text-[0.98rem] leading-relaxed text-ink-soft">A balanced, nutrient-rich diet helps support overall skin health and the skin barrier. That’s part of what we’re supporting during these 3 days, too.</p></div><div className="grid gap-6 sm:grid-cols-2">{FOOD_GROUPS.map((group) => <section key={group.title} className="border-t border-sand pt-4"><Label>{group.title}</Label><BulletList items={group.items} /></section>)}<p className="sm:col-span-2 border-l-2 border-rose pl-4 font-display text-lg text-ink">Whole fruit stays.</p></div></div>,
     },
   ];
 
@@ -439,7 +439,7 @@ function EliminationGuidePage() {
               items={[{
                 id: "three-day-routine",
                 title: "Open my 3-day routine",
-                content: <div className="space-y-7"><div className="flex items-end justify-between border-b border-sand pb-4"><p className="font-display text-2xl text-ink">AM + PM</p><Label>For 3 days</Label></div><div className="grid gap-4 sm:grid-cols-2"><div className="panel-card"><Label>Step 1</Label><h4 className="mt-2 text-xl">Cleanse</h4><p className="mt-2 text-[0.95rem] text-ink-soft">Gentle cleanser and/or water rinse.</p></div><div className="panel-card"><Label>Step 2</Label><h4 className="mt-2 text-xl">Thermal Water</h4><p className="mt-2 text-[0.95rem] text-ink-soft">Apply thermal water.</p></div></div><div className="space-y-5 text-[0.94rem] leading-relaxed text-ink-soft"><div><Label>Already have a moisturizer?</Label><p className="mt-2">If your moisturizer passes the Elimination Guide screen, you can keep using it.</p></div><div><Label>Already have a sunscreen?</Label><p className="mt-2">If your sunscreen passes the Elimination Guide screen, you can keep using it.</p></div><div><Label>Using treatment from your healthcare provider?</Label><p className="mt-2">Keep using it as directed.</p></div></div><div className="gem-card"><p className="font-display text-xl text-ink">This is your starting point—not your forever routine.</p><p className="mt-3 text-[0.94rem] leading-relaxed text-ink-soft">This simplified routine does not mean your skin will never need benzoyl peroxide, salicylic acid, a retinoid, azelaic acid, or another acne treatment.</p></div></div>,
+                content: <div className="space-y-7"><div className="flex items-end justify-between border-b border-sand pb-4"><p className="font-display text-2xl text-ink">AM + PM</p><Label>For 3 days</Label></div><div className="grid gap-4 sm:grid-cols-2"><div className="panel-card"><Label>Step 1</Label><h4 className="mt-2 text-xl">Cleanse</h4><p className="mt-2 text-[0.95rem] text-ink-soft">Use a gentle jelly or gel cleanser without acne-treatment actives such as salicylic acid (BHA) or benzoyl peroxide (BPO).</p></div><div className="panel-card"><Label>Step 2</Label><h4 className="mt-2 text-xl">Spray</h4><p className="mt-2 text-[0.95rem] text-ink-soft">Spray La Roche-Posay Thermal Spring Water onto your skin.</p><div className="mt-4 border-t border-sand pt-4"><Label>Throughout the day</Label><p className="mt-2 text-[0.95rem] text-ink-soft">You can spray La Roche-Posay Thermal Spring Water again as often as needed throughout the day for a refreshing layer of hydration and additional skin-barrier support.</p><p className="mt-3 text-[0.72rem] leading-relaxed text-taupe">Jean’s recommendation. Live Pretty Wellness is not affiliated with or sponsored by La Roche-Posay.</p></div></div></div><div className="space-y-5 text-[0.94rem] leading-relaxed text-ink-soft"><div><Label>Already have a moisturizer?</Label><p className="mt-2">If your moisturizer passes the Elimination Guide screen, you can keep using it.</p></div><div><Label>Already have a sunscreen?</Label><p className="mt-2">If your sunscreen passes the Elimination Guide screen, you can keep using it.</p></div><div><Label>Using treatment from your healthcare provider?</Label><p className="mt-2">Keep using it as directed.</p></div></div><div className="gem-card"><p className="font-display text-xl text-ink">This is your starting point—not your forever routine.</p><p className="mt-3 text-[0.94rem] leading-relaxed text-ink-soft">This simplified routine does not mean your skin will never need benzoyl peroxide, salicylic acid, a retinoid, azelaic acid, or another acne treatment.</p></div></div>,
               }]}
             />
           </div>
@@ -486,7 +486,7 @@ function EliminationGuidePage() {
           <div>
             <Label>Written and clinically reviewed by</Label>
             <h2 id="reviewed-by" className="mt-2 text-2xl">Jean, MSN, FNP-C</h2>
-            <p className="mt-1 text-[0.9rem] text-ink-soft">Board-Certified Family Nurse Practitioner · Nurse Practitioner Strategist</p>
+            <p className="mt-1 text-[0.9rem] text-ink-soft">Board-Certified Family Nurse Practitioner Strategist</p>
           </div>
         </div>
         <p className="mt-8 text-center text-[0.7rem] uppercase tracking-[0.18em] text-taupe">Live Pretty Wellness</p>
