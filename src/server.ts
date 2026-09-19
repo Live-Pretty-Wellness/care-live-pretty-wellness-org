@@ -49,7 +49,7 @@ function isH3SwallowedErrorBody(body: string): boolean {
 function withPageIndexingHeader(request: Request, response: Response): Response {
   const headers = new Headers(response.headers);
   const path = new URL(request.url).pathname.replace(/\/$/, "") || "/";
-  if (path === "/acne-prone-skin-elimination-guide") {
+  if (path === "/skin-start-a7k4m9") {
     headers.set("X-Robots-Tag", "index, follow");
   } else {
     headers.set("X-Robots-Tag", "noindex, nofollow");
