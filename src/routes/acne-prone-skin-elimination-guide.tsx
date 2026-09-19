@@ -191,7 +191,7 @@ const FOODS_ELIMINATE = [
   "Highly processed snack foods",
 ];
 
-const FOOD_GROUPS = [
+const FOOD_GROUPS: { title: string; items: string[]; note?: string }[] = [
   {
     title: "Vegetables",
     items: ["Leafy greens", "Broccoli", "Cauliflower", "Cabbage", "Peppers", "Zucchini", "Green beans", "Brussels sprouts"],
