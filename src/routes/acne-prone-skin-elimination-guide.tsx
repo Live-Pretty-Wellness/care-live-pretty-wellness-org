@@ -346,7 +346,7 @@ function EliminationGuidePage() {
     {
       id: "heavy-oils",
       title: "Comedogenic or heavy oils",
-      content: <div className="space-y-4 text-[0.98rem] leading-relaxed text-ink-soft"><p>Some acne-prone skin tolerates oils beautifully. Other people notice increased congestion, closed comedones, or breakouts.</p><p className="font-semibold text-ink">Oils worth evaluating if you are repeatedly clogging:</p><BulletList items={HEAVY_OILS} /><div className="mt-6"><Label>Also check products outside your skincare routine</Label><p className="mt-3">Oil exposure may come from:</p><BulletList items={OUTSIDE_SKINCARE} /></div><p className="border-l-2 border-rose pl-4 font-display text-lg text-ink">If your breakouts cluster around the hairline, forehead, temples, jawline, or sides of the face, look beyond your facial moisturizer.</p></div>,
+      content: <div className="space-y-4 text-[0.98rem] leading-relaxed text-ink-soft"><p>Some acne-prone skin tolerates oils beautifully. Other people notice increased congestion, closed comedones, or breakouts.</p><p className="font-semibold text-ink">Oils worth evaluating if you are repeatedly clogging:</p><BulletList items={HEAVY_OILS} /><div className="mt-6"><Label>Also check products outside your skincare routine</Label><p className="mt-3">Oil exposure may come from:</p><BulletList items={OUTSIDE_SKINCARE} /></div><p className="border-l-2 border-rose pl-4 font-display text-lg text-ink">If your breakouts cluster around the hairline, forehead, temples, jawline, or sides of the face, look beyond your skincare routine.</p></div>,
     },
     {
       id: "irritating-ingredients",
