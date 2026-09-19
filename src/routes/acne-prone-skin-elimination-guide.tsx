@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
 import lpwLogo from "@/assets/lpw-logo.png";
 
-const CONSULTATION_URL = "https://stan.store/liveprettywellness/p/personalized-skincare-strategy-visit";
+const CONSULTATION_URL = "https://liveprettywellness.com/acne-skin-help";
 const STRATEGIST_URL = "https://liveprettywellness.com/pretty-skin-strategist";
 const JEAN_PHOTO = "/images/jeans-picks/acneplan/jean-portrait-approved.jpeg";
 const PAGE_PATH = "/acne-prone-skin-elimination-guide";
