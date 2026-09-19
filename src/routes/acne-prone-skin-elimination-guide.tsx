@@ -196,7 +196,7 @@ const FOOD_GROUPS: { title: string; items: string[]; note?: string }[] = [
     title: "Vegetables",
     items: ["Leafy greens", "Broccoli", "Cauliflower", "Cabbage", "Peppers", "Zucchini", "Green beans", "Brussels sprouts"],
   },
-  { title: "Whole fruit", items: ["Berries", "Apples", "Pears", "Cherries", "Peaches", "Plums", "Kiwi"], note: "Whole fruit stays." },
+  { title: "Whole fruit", items: ["Berries", "Apples", "Pears", "Cherries", "Peaches", "Plums", "Kiwi"] },
   { title: "Protein", items: ["Fish", "Chicken", "Turkey", "Beans", "Lentils"] },
   { title: "Carbohydrates", items: ["Sweet potatoes", "Quinoa", "Beans", "Lentils"] },
   {
