@@ -563,7 +563,7 @@ function EliminationGuidePage() {
             </p>
           </div>
           <div className="mt-4 flex justify-center">
-            <ActionLink href={CONSULTATION_URL} variant="quiet" small>Get help with your acne-prone skin →</ActionLink>
+            <ActionLink href={CONSULTATION_URL} outlined>Get help with your acne-prone skin →</ActionLink>
           </div>
         </section>
 
