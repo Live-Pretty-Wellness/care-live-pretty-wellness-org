@@ -548,7 +548,26 @@ function EliminationGuidePage() {
             <p className="mt-1 text-[0.9rem] text-ink-soft">Board-Certified Family Nurse Practitioner Strategist</p>
           </div>
         </div>
-        <p className="mt-8 text-center text-[0.7rem] uppercase tracking-[0.18em] text-taupe">Live Pretty Wellness</p>
+
+        <section aria-labelledby="medical-disclaimer" className="mt-10 max-w-2xl border-t border-line pt-6 text-center">
+          <h3 id="medical-disclaimer" className="text-[0.7rem] font-medium uppercase tracking-[0.2em] text-taupe">Medical Disclaimer</h3>
+          <div className="mt-3 space-y-3 text-[0.85rem] leading-relaxed text-ink-soft">
+            <p>
+              This guide provides general educational and health information and does not constitute individualized medical advice, diagnosis, or treatment.
+            </p>
+            <p>
+              Although I am a Board-Certified Family Nurse Practitioner Strategist, I am not your healthcare provider unless we have established a healthcare provider–patient relationship. Please continue to follow the recommendations of the healthcare provider managing your care and contact them with questions about your medications, treatment, or individual medical needs.
+            </p>
+            <p>
+              Want me to be part of your care? I'd love to help. You can explore your options for working with me through Live Pretty Wellness.
+            </p>
+          </div>
+          <div className="mt-4 flex justify-center">
+            <ActionLink href={CONSULTATION_URL} variant="quiet" small>Get help with your acne-prone skin →</ActionLink>
+          </div>
+        </section>
+
+        <p className="mt-10 text-center text-[0.7rem] uppercase tracking-[0.18em] text-taupe">Live Pretty Wellness</p>
       </section>
     </main>
   );
