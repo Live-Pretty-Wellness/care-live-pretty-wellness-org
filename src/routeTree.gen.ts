@@ -9,14 +9,19 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as AcneProneSkinEliminationGuideRouteImport } from './routes/acne-prone-skin-elimination-guide'
 import { Route as Acneplan6h3v9k2sRouteImport } from './routes/acneplan-6h3v9k2s'
 import { Route as Bpsa4k7m2q9xRouteImport } from './routes/bpsa-4k7m2q9x'
 import { Route as Dspot5c9j4w7tRouteImport } from './routes/dspot-5c9j4w7t'
 import { Route as Hairbo2z6d8f3yRouteImport } from './routes/hairbo-2z6d8f3y'
-import { Route as PsrQ7m4V9k2RouteImport } from './routes/psr-q7m4-v9k2'
-import { Route as SroK8p3X5n7RouteImport } from './routes/sro-k8p3-x5n7'
 import { Route as Trtaza8v3n6r1pRouteImport } from './routes/trtaza-8v3n6r1p'
 
+const AcneProneSkinEliminationGuideRoute =
+  AcneProneSkinEliminationGuideRouteImport.update({
+    id: '/acne-prone-skin-elimination-guide',
+    path: '/acne-prone-skin-elimination-guide',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const Acneplan6h3v9k2sRoute = Acneplan6h3v9k2sRouteImport.update({
   id: '/acneplan-6h3v9k2s',
   path: '/acneplan-6h3v9k2s',
@@ -37,16 +42,6 @@ const Hairbo2z6d8f3yRoute = Hairbo2z6d8f3yRouteImport.update({
   path: '/hairbo-2z6d8f3y',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PsrQ7m4V9k2Route = PsrQ7m4V9k2RouteImport.update({
-  id: '/psr-q7m4-v9k2',
-  path: '/psr-q7m4-v9k2',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SroK8p3X5n7Route = SroK8p3X5n7RouteImport.update({
-  id: '/sro-k8p3-x5n7',
-  path: '/sro-k8p3-x5n7',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const Trtaza8v3n6r1pRoute = Trtaza8v3n6r1pRouteImport.update({
   id: '/trtaza-8v3n6r1p',
   path: '/trtaza-8v3n6r1p',
@@ -54,75 +49,75 @@ const Trtaza8v3n6r1pRoute = Trtaza8v3n6r1pRouteImport.update({
 } as any)
 
 export interface FileRoutesByFullPath {
+  '/acne-prone-skin-elimination-guide': typeof AcneProneSkinEliminationGuideRoute
   '/acneplan-6h3v9k2s': typeof Acneplan6h3v9k2sRoute
   '/bpsa-4k7m2q9x': typeof Bpsa4k7m2q9xRoute
   '/dspot-5c9j4w7t': typeof Dspot5c9j4w7tRoute
   '/hairbo-2z6d8f3y': typeof Hairbo2z6d8f3yRoute
-  '/psr-q7m4-v9k2': typeof PsrQ7m4V9k2Route
-  '/sro-k8p3-x5n7': typeof SroK8p3X5n7Route
   '/trtaza-8v3n6r1p': typeof Trtaza8v3n6r1pRoute
 }
 export interface FileRoutesByTo {
+  '/acne-prone-skin-elimination-guide': typeof AcneProneSkinEliminationGuideRoute
   '/acneplan-6h3v9k2s': typeof Acneplan6h3v9k2sRoute
   '/bpsa-4k7m2q9x': typeof Bpsa4k7m2q9xRoute
   '/dspot-5c9j4w7t': typeof Dspot5c9j4w7tRoute
   '/hairbo-2z6d8f3y': typeof Hairbo2z6d8f3yRoute
-  '/psr-q7m4-v9k2': typeof PsrQ7m4V9k2Route
-  '/sro-k8p3-x5n7': typeof SroK8p3X5n7Route
   '/trtaza-8v3n6r1p': typeof Trtaza8v3n6r1pRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
+  '/acne-prone-skin-elimination-guide': typeof AcneProneSkinEliminationGuideRoute
   '/acneplan-6h3v9k2s': typeof Acneplan6h3v9k2sRoute
   '/bpsa-4k7m2q9x': typeof Bpsa4k7m2q9xRoute
   '/dspot-5c9j4w7t': typeof Dspot5c9j4w7tRoute
   '/hairbo-2z6d8f3y': typeof Hairbo2z6d8f3yRoute
-  '/psr-q7m4-v9k2': typeof PsrQ7m4V9k2Route
-  '/sro-k8p3-x5n7': typeof SroK8p3X5n7Route
   '/trtaza-8v3n6r1p': typeof Trtaza8v3n6r1pRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
+    | '/acne-prone-skin-elimination-guide'
     | '/acneplan-6h3v9k2s'
     | '/bpsa-4k7m2q9x'
     | '/dspot-5c9j4w7t'
     | '/hairbo-2z6d8f3y'
-    | '/psr-q7m4-v9k2'
-    | '/sro-k8p3-x5n7'
     | '/trtaza-8v3n6r1p'
   fileRoutesByTo: FileRoutesByTo
   to:
+    | '/acne-prone-skin-elimination-guide'
     | '/acneplan-6h3v9k2s'
     | '/bpsa-4k7m2q9x'
     | '/dspot-5c9j4w7t'
     | '/hairbo-2z6d8f3y'
-    | '/psr-q7m4-v9k2'
-    | '/sro-k8p3-x5n7'
     | '/trtaza-8v3n6r1p'
   id:
     | '__root__'
+    | '/acne-prone-skin-elimination-guide'
     | '/acneplan-6h3v9k2s'
     | '/bpsa-4k7m2q9x'
     | '/dspot-5c9j4w7t'
     | '/hairbo-2z6d8f3y'
-    | '/psr-q7m4-v9k2'
-    | '/sro-k8p3-x5n7'
     | '/trtaza-8v3n6r1p'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
+  AcneProneSkinEliminationGuideRoute: typeof AcneProneSkinEliminationGuideRoute
   Acneplan6h3v9k2sRoute: typeof Acneplan6h3v9k2sRoute
   Bpsa4k7m2q9xRoute: typeof Bpsa4k7m2q9xRoute
   Dspot5c9j4w7tRoute: typeof Dspot5c9j4w7tRoute
   Hairbo2z6d8f3yRoute: typeof Hairbo2z6d8f3yRoute
-  PsrQ7m4V9k2Route: typeof PsrQ7m4V9k2Route
-  SroK8p3X5n7Route: typeof SroK8p3X5n7Route
   Trtaza8v3n6r1pRoute: typeof Trtaza8v3n6r1pRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/acne-prone-skin-elimination-guide': {
+      id: '/acne-prone-skin-elimination-guide'
+      path: '/acne-prone-skin-elimination-guide'
+      fullPath: '/acne-prone-skin-elimination-guide'
+      preLoaderRoute: typeof AcneProneSkinEliminationGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/acneplan-6h3v9k2s': {
       id: '/acneplan-6h3v9k2s'
       path: '/acneplan-6h3v9k2s'
@@ -151,20 +146,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Hairbo2z6d8f3yRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/psr-q7m4-v9k2': {
-      id: '/psr-q7m4-v9k2'
-      path: '/psr-q7m4-v9k2'
-      fullPath: '/psr-q7m4-v9k2'
-      preLoaderRoute: typeof PsrQ7m4V9k2RouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sro-k8p3-x5n7': {
-      id: '/sro-k8p3-x5n7'
-      path: '/sro-k8p3-x5n7'
-      fullPath: '/sro-k8p3-x5n7'
-      preLoaderRoute: typeof SroK8p3X5n7RouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/trtaza-8v3n6r1p': {
       id: '/trtaza-8v3n6r1p'
       path: '/trtaza-8v3n6r1p'
@@ -176,12 +157,11 @@ declare module '@tanstack/react-router' {
 }
 
 const rootRouteChildren: RootRouteChildren = {
+  AcneProneSkinEliminationGuideRoute: AcneProneSkinEliminationGuideRoute,
   Acneplan6h3v9k2sRoute: Acneplan6h3v9k2sRoute,
   Bpsa4k7m2q9xRoute: Bpsa4k7m2q9xRoute,
   Dspot5c9j4w7tRoute: Dspot5c9j4w7tRoute,
   Hairbo2z6d8f3yRoute: Hairbo2z6d8f3yRoute,
-  PsrQ7m4V9k2Route: PsrQ7m4V9k2Route,
-  SroK8p3X5n7Route: SroK8p3X5n7Route,
   Trtaza8v3n6r1pRoute: Trtaza8v3n6r1pRoute,
 }
 export const routeTree = rootRouteImport
