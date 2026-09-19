@@ -1,5 +1,6 @@
 # Roadmap
 
-- [x] Redesign `/psr-q7m4-v9k2` as the selected concise chapter-led visual guide without changing guidance.
-- [x] Move the complete Skin Regimen Organizer to unlisted `/sro-k8p3-x5n7` preserving saved-data behavior and existing entries (same storage key, no second store).
-- [x] Verify both routes, privacy controls, organizer interactions, mobile layout, and unchanged Strategist experience.
+- [ ] Remove the obsolete Pretty Skin Reset and Skin Regimen Organizer routes.
+- [ ] Build the new one-page Acne-Prone Skin Elimination Guide with exact supplied content and interactions.
+- [ ] Add page-only indexable metadata, canonical, and conservative structured data.
+- [ ] Verify mobile/desktop, accordions, content, privacy isolation, and unchanged existing pages.
