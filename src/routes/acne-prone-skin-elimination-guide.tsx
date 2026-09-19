@@ -4,6 +4,8 @@ import lpwLogo from "@/assets/lpw-logo.png";
 
 const CONSULTATION_URL = "https://liveprettywellness.com/acne-skin-help";
 const STRATEGIST_URL = "https://liveprettywellness.com/pretty-skin-strategist";
+const CLIENT_TRANSFORMATIONS_URL = "https://stan.store/liveprettywellness/p/real-client-progress-transformations";
+const CLIENT_REVIEWS_URL = "https://stan.store/liveprettywellness/p/google-reviews-and-client-testimonials";
 const JEAN_PHOTO = "/images/jeans-picks/acneplan/jean-portrait-approved.jpeg";
 const PAGE_PATH = "/acne-prone-skin-elimination-guide";
 
@@ -203,7 +205,7 @@ const FOOD_GROUPS = [
     title: "Oils + fats",
     items: ["Avocado oil", "Extra-virgin olive oil", "Avocado", "Walnuts", "Almonds", "Chia seeds", "Pumpkin seeds"],
   },
-  { title: "Milk alternatives", items: ["Unsweetened almond milk", "Unsweetened soy milk"] },
+  { title: "Dairy + milk options", items: ["Almond milk", "Goat dairy", "Coconut milk", "Sheep dairy", "Coconut yogurt", "Hemp milk"] },
 ];
 
 type AccordionItem = { id: string; title: string; content: ReactNode };
@@ -465,6 +467,15 @@ function EliminationGuidePage() {
           <ul className="mt-7 space-y-4 text-[1rem] leading-relaxed">
             {["You’ve screened the products and ingredients touching your skin.", "You’ve eliminated foods and everyday habits that may be working against your clear-skin goals.", "You’ve kept your healthcare-provider-directed treatment in place.", "You’ve built your 3-day skin-barrier-support routine."].map((item) => <li key={item} className="flex gap-3"><span aria-hidden="true" className="text-rose-soft">✓</span><span>{item}</span></li>)}
           </ul>
+        </div>
+      </section>
+
+      <section className="pick-shell py-10 sm:py-12" aria-labelledby="client-experiences-title">
+        <Label>Real client experiences</Label>
+        <h2 id="client-experiences-title" className="mt-3 text-[1.75rem] sm:text-[2.15rem]">Want to see what working with Live Pretty Wellness has looked like for other clients?</h2>
+        <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:gap-4">
+          <ActionLink href={CLIENT_TRANSFORMATIONS_URL} outlined>See client progress + transformations →</ActionLink>
+          <ActionLink href={CLIENT_REVIEWS_URL} outlined>Read client reviews + testimonials →</ActionLink>
         </div>
       </section>
 
