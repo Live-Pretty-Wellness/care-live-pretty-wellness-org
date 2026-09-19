@@ -173,33 +173,30 @@ const BEYOND_SKINCARE = [
   "Towels",
 ];
 
+const FOODS_ELIMINATE = [
+  "White bread",
+  "White rice",
+  "Corn flakes",
+  "Puffed rice cereal",
+  "Potato chips",
+  "White potatoes",
+  "French fries",
+  "Doughnuts",
+  "Pastries",
+  "Sugary drinks",
+  "Milkshakes",
+  "Cow’s milk",
+  "Fast food",
+  "Fried foods",
+  "Highly processed snack foods",
+];
+
 const FOOD_GROUPS = [
-  {
-    title: "Eliminate",
-    items: [
-      "White bread",
-      "White rice",
-      "Corn flakes",
-      "Puffed rice cereal",
-      "Potato chips",
-      "White potatoes",
-      "French fries",
-      "Doughnuts",
-      "Pastries",
-      "Sugary drinks",
-      "Milkshakes",
-      "Cow’s milk",
-      "Fast food",
-      "Fried foods",
-      "Highly processed snack foods",
-    ],
-  },
-  { title: "For now", items: ["Cook most of your meals at home."] },
   {
     title: "Vegetables",
     items: ["Leafy greens", "Broccoli", "Cauliflower", "Cabbage", "Peppers", "Zucchini", "Green beans", "Brussels sprouts"],
   },
-  { title: "Whole fruit", items: ["Berries", "Apples", "Pears", "Cherries", "Peaches", "Plums", "Kiwi"] },
+  { title: "Whole fruit", items: ["Berries", "Apples", "Pears", "Cherries", "Peaches", "Plums", "Kiwi"], note: "Whole fruit stays." },
   { title: "Protein", items: ["Fish", "Chicken", "Turkey", "Beans", "Lentils"] },
   { title: "Carbohydrates", items: ["Sweet potatoes", "Quinoa", "Beans", "Lentils"] },
   {
