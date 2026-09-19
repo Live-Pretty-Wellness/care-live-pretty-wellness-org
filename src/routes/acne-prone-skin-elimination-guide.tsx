@@ -418,6 +418,13 @@ function EliminationGuidePage() {
         <p className="mt-5 font-display text-xl text-cocoa sm:text-2xl">Clear the way for your clear-skin strategy.</p>
         <div className="mt-6 max-w-2xl space-y-4 text-[1.02rem] leading-relaxed text-ink-soft">
           <p>Before you add another product, let’s look at what may need to come out.</p>
+        </div>
+        <div className="mt-8 border-y-2 border-cocoa bg-cream px-5 py-7 sm:px-8">
+          <p className="font-display text-[1.4rem] leading-snug text-ink sm:text-[1.9rem]">
+            Build a long-term clear-skin plan that doesn’t depend on Accutane, birth control, spironolactone, or long-term oral antibiotics.
+          </p>
+        </div>
+        <div className="mt-8 max-w-2xl space-y-4 text-[1.02rem] leading-relaxed text-ink-soft">
           <p>Use this guide to remove products, ingredients, foods, and everyday practices that may be working against acne-prone skin—while keeping healthcare-provider-directed treatment in place.</p>
         </div>
         <div className="mt-9 border-y border-sand py-6 font-display text-[1.25rem] leading-relaxed text-ink sm:text-[1.45rem]">
