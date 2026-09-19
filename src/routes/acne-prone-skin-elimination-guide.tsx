@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
 import lpwLogo from "@/assets/lpw-logo.png";
+import clientCollage from "@/assets/client-progress-collage.png.asset.json";
 
 const CONSULTATION_URL = "https://liveprettywellness.com/acne-skin-help";
 const STRATEGIST_URL = "https://liveprettywellness.com/pretty-skin-strategist";
@@ -472,11 +473,22 @@ function EliminationGuidePage() {
 
       <section className="pick-shell py-10 sm:py-12" aria-labelledby="client-experiences-title">
         <Label>Real client experiences</Label>
-        <h2 id="client-experiences-title" className="mt-3 text-[1.75rem] sm:text-[2.15rem]">Want to see what working with Live Pretty Wellness has looked like for other clients?</h2>
-        <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:gap-4">
-          <ActionLink href={CLIENT_TRANSFORMATIONS_URL} outlined>See client progress + transformations →</ActionLink>
+        <h2 id="client-experiences-title" className="mt-3 text-[1.75rem] sm:text-[2.15rem]">See Their Progress.</h2>
+        <p className="mt-4 max-w-2xl text-[1rem] leading-relaxed text-ink-soft">These are real Live Pretty Wellness clients and real skin journeys. Results are individual, and every person’s skin responds differently.</p>
+        <figure className="mt-7">
+          <img
+            src={clientCollage.url}
+            alt="Live Pretty Wellness client before-and-after skin progress collage"
+            className="w-full h-auto rounded-lg border border-line"
+            loading="lazy"
+          />
+        </figure>
+        <p className="mt-8 text-[0.8rem] uppercase tracking-[0.16em] text-taupe">Want to see more?</p>
+        <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:gap-4">
+          <ActionLink href={CLIENT_TRANSFORMATIONS_URL}>See more client progress + transformations →</ActionLink>
           <ActionLink href={CLIENT_REVIEWS_URL} outlined>Read client reviews + testimonials →</ActionLink>
         </div>
+        <p className="mt-6 text-[0.75rem] leading-relaxed text-taupe">Individual results vary. Client images reflect individual experiences and are not a guarantee of results.</p>
       </section>
 
       <section className="pick-shell py-12 sm:py-16" aria-labelledby="keep-going-title">
