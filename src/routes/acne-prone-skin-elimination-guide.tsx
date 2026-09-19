@@ -367,7 +367,39 @@ function EliminationGuidePage() {
     {
       id: "food",
       title: "Check your food",
-      content: <div><div className="mb-6"><Label>What you eat matters, too.</Label><p className="mt-3 text-[0.98rem] leading-relaxed text-ink-soft">A balanced, nutrient-rich diet helps support overall skin health and the skin barrier. That’s part of what we’re supporting during these 3 days, too.</p></div><div className="grid gap-6 sm:grid-cols-2">{FOOD_GROUPS.map((group) => <section key={group.title} className="border-t border-sand pt-4"><Label>{group.title}</Label><BulletList items={group.items} /></section>)}<p className="sm:col-span-2 border-l-2 border-rose pl-4 font-display text-lg text-ink">Whole fruit stays.</p></div></div>,
+      content: (
+        <div>
+          <div className="mb-8">
+            <Label>What you eat matters, too.</Label>
+            <p className="mt-3 text-[0.98rem] leading-relaxed text-ink-soft">A balanced, nutrient-rich diet helps support overall skin health and the skin barrier. That’s part of what we’re supporting during these 3 days, too.</p>
+          </div>
+
+          <section aria-label="Eliminate for now" className="rounded-lg border border-blush bg-rose-tint/70 p-6 sm:p-8">
+            <Label>Eliminate for now</Label>
+            <p className="mt-3 text-[0.98rem] leading-relaxed text-ink-soft">Start by clearing out these foods during your 3-day reset.</p>
+            <BulletList items={FOODS_ELIMINATE} />
+          </section>
+
+          <div className="my-8 border-l-2 border-cocoa bg-cream px-5 py-4">
+            <Label>For the next 3 days</Label>
+            <p className="mt-2 font-display text-lg leading-snug text-ink">Cook most of your meals at home.</p>
+          </div>
+
+          <section aria-label="Build your meals" className="rounded-lg border border-sand bg-cream/70 p-6 sm:p-8">
+            <Label>Build your meals</Label>
+            <p className="mt-3 text-[0.98rem] leading-relaxed text-ink-soft">Use these foods to help build balanced meals during your 3-day reset.</p>
+            <div className="mt-6 grid gap-x-10 gap-y-7 sm:grid-cols-2">
+              {FOOD_GROUPS.map((group) => (
+                <div key={group.title} className="border-t border-sand pt-4">
+                  <Label>{group.title}</Label>
+                  <BulletList items={group.items} />
+                  {group.note ? <p className="mt-3 border-l-2 border-rose pl-4 font-display text-lg text-ink">{group.note}</p> : null}
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
+      ),
     },
   ];
 
